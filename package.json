@@ -1,0 +1,30 @@
+{
+  "name": "webtemplate",
+  "description": "Basic Web Template",
+  "repository": "https://github.com/foo/bar",
+  "private": true,
+  "engines": {
+    "node": "~0.10.26"
+  },
+  "dependencies": {
+    "body-parser": "~1.0.0",
+    "bower": "*",
+    "cors": "~2.2.0",
+    "debug": "*",
+    "express": "~4.x",
+    "grunt": "*",
+    "grunt-cli": "*",
+    "grunt-traceur-simple": "^0.9.6",
+    "grunt-contrib-jshint": "*",
+    "morgan": "~1.0.0",
+    "static-favicon": "*",
+    "underscore": "*"
+  },
+  "devDependencies": {
+    "grunt-contrib-watch": "*"
+  },
+  "scripts": {
+    "start": "node ./server.js",
+    "test": "grunt"
+  }
+}

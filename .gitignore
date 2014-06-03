@@ -1,0 +1,11 @@
+# Dependency directories
+node_modules
+bower_components
+
+# Traceur generated files
+*.map
+public/js/app.js
+/app.js
+
+# Log files
+*.log
