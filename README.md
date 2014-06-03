@@ -1,6 +1,6 @@
 # Website Template #
 
-Jay's starting template for new website development, based around NodeJS, Express 4.x, AngularJS, and Traceur as a starting point.  Leverages NPM, Bower, and Grunt to automate the installation and build process.  Optimized for hosting on Azure Websites with Github source hosting and CircleCI build/test automation.
+Starting template for new website development, based around NodeJS, Express 4.x, AngularJS, and Traceur as a starting point.  Leverages NPM, Bower, and Grunt to automate the installation and build process.  Optimized for hosting on Azure Websites with Github source hosting and CircleCI build/test automation.
 
 ## Installing Development Environment ##
 
@@ -14,7 +14,7 @@ To install dependencies:
 	npm install
 	bower install
 
-## Running service ##
+## Run locally ##
 
 To prepare the service for running,
 
@@ -23,3 +23,9 @@ To prepare the service for running,
 To run the service locally,
 
 	npm start
+
+## Deployment ##
+
+Set up Github web hook for Circle CI.
+
+Use Azure create new website wizard -> custom -> Deploy from Source Control -> Github.
