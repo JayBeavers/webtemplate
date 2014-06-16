@@ -9,3 +9,5 @@ public/js/app.js
 
 # Log files
 *.log
+
+.DS_store

@@ -1,7 +1,6 @@
 {
   "name": "webtemplate",
   "description": "Basic Web Template",
-  "repository": "https://github.com/foo/bar",
   "private": true,
   "engines": {
     "node": "~0.10.26"

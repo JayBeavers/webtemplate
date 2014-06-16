@@ -21,14 +21,17 @@ module.exports = function(grunt) {
     },
 
     jshint: {
-      files: ['*.js', 'routes/**/*.js', 'public/js/**/*.js', '!**/*.6.js'],
+      files: ['**/*.js', '!node_modules/**/*.js', '!public/bower_components/**/*.js'],
       options: {
         globals: {
           console: true,
           module: true,
           angular: true
         },
-        globalstrict: true
+        globalstrict: false,
+        node: true,
+        browser: true,
+        esnext: true
       }
     },
 
@@ -38,7 +41,7 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.loadNpmTasks("grunt-traceur-simple");
+  grunt.loadNpmTasks('grunt-traceur-simple');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
