@@ -16,14 +16,14 @@
     "grunt-traceur-simple": "^0.9.6",
     "grunt-contrib-jshint": "*",
     "morgan": "~1.0.0",
-    "static-favicon": "*",
     "underscore": "*"
   },
   "devDependencies": {
-    "grunt-contrib-watch": "*"
+    "grunt-contrib-watch": "*",
+    "grunt-express-server": "^0.4.17"
   },
   "scripts": {
-    "start": "node ./server.js",
+    "start": "grunt server",
     "test": "grunt"
   }
 }

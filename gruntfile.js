@@ -1,5 +1,4 @@
 'use strict';
-/*global module:false */
 
 module.exports = function(grunt) {
 
@@ -36,16 +35,35 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      files: ['<%= jshint.files %>'],
-      tasks: ['jshint']
+      express: {
+        files: ['<%= jshint.files %>'],
+        tasks: ['traceur', 'jshint', 'express:dev'],
+        options: {
+          spawn: false
+        }
+      }
+    },
+
+    express: {
+      options: {
+        // Override defaults here
+      },
+      dev: {
+        options: {
+          script: 'server.js'
+        }
+      }
     }
+
   });
 
   grunt.loadNpmTasks('grunt-traceur-simple');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-express-server');
 
   grunt.registerTask('default', ['traceur', 'jshint']);
   grunt.registerTask('build', ['traceur', 'jshint']);
+  grunt.registerTask('server', ['traceur', 'jshint', 'express:dev', 'watch' ]);
 
 };
