@@ -1,6 +1,6 @@
 {
-  "name": "webtemplate",
-  "description": "Basic Web Template",
+  "name": "resttemplate",
+  "description": "Basic Rest Template",
   "private": true,
   "engines": {
     "node": "~0.10.26"

@@ -13,7 +13,6 @@ module.exports = function(grunt) {
       all: {
         files: {
           // Just need to transpile main file which imports others.
-          'public/js/app.js': ['public/js/app.6.js'],
           'app.js': ['app.6.js']
         }
       }
