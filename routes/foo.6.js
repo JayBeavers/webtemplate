@@ -1,4 +1,4 @@
-var debug = require('debug')('wifi');
+var debug = require('debug')('foo');
 var router = require('express').Router();
 var assert = require('assert');
 var util = require('util');

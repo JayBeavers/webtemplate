@@ -5,6 +5,7 @@ require('./node_modules/grunt-traceur-simple/node_modules/traceur/bin/traceur-ru
 
 var debugService = require('debug');
 debugService.enable('server');
+debugService.enable('foo');
 
 var debug = require('debug')('server');
 
